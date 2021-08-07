@@ -126,7 +126,91 @@ header nav a:hover{
     border: 1px solid #000;
     color: #000;
 }
-/************* MEDIA QUERES DEL MENU  *******************/
+/*****************  CONTENEDOR DE TITULO Y CONTROLES   ***********************/
+.contenedor-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.contenedor-titulo-controles h3{
+    color: #fff;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.contenedor-titulo-controles .indicadores button{
+    background: #fff;
+    height: 3px;
+    width: 15px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+    background: red;
+}
+/***********  CONTENEDOR PIRNCIPAL Y FLECHAS ******************/
+.peliculas-recomendadas{
+    border: 1px solid yellow;
+    margin-bottom: 70px;
+}
+.peliculas-recomendadas .contenedor-principal{
+    display: flex; /*tranformos todos los elementos auna linea horizontal.*/
+    align-items: center;
+    position: relative;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.705);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width:50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500; /*para que al flecha quede arriba de lso elementos*/
+    transition: .2s ease all; 
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover{
+    color: var(--rojo);
+}
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.peliculas-recomendadas .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+/*****************  CARUSEL  ************************/
+.peliculas-recomendadas .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0; 
+    overflow: hidden;/*lo que se salga del 1005 que este oculto*/
+    scroll-behavior: smooth; /*el scrol se suabe*/
+}
+.peliculas-recomendadas .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap; /*para que las imagenes esten en fila todas*/
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula{
+    min-width: 20%;
+    transition:.3s ease all; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover{
+    transform: scale(1.2);
+    transform-origin: center; /*Para que la img cresca de desntro hasia fuera*/
+}
+/*para que las peliculas en el carusel se acomoden*/
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
+    width: 100%;
+    vertical-align: top;
+}
+/************* MEDIA QUERES DEL MENU  *************************************/
 @media screen and (max-width: 800px) {
     header .logotipo{
         margin-bottom: 18px;
@@ -156,6 +240,18 @@ header nav a:hover{
     .datos_peli .description{
         font-size: 13px;
     }
+    /************ MEDIA QUERES DEL CAROUSEL -SLIDER **************************/
+    .peliculas-recomendadas .contenedor-carousel{
+        overflow: hidden;
+    }
+    .peliculas-recomendadas .contenedor-carousel .carousel{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);/*cada columana va aavarcar lo mismo*/
+        gap: 20px; /*espaciado entre img*/
+    }
+    .peliculas-recomendadas .indicadores,
+    .peliculas-recomendadas .flecha-izquierda,
+    .peliculas-recomendadas .flecha-derecha{
+        display: none; /*ocultamos indicadores y flechas*/
+    }
 }
-
-
