@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clon Netflix</title>
+    <link rel="icon" type="images/png" href="img/logo-n.png">
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -19,13 +20,19 @@
                     <a href="#">PELICULAS</a>
                     <a href="#">NOVEDADES POPULARES</a>
                     <a href="#">MI LISTA</a>
-                    
                 </nav>
                 <div class='perfil'>
                     <i class="fa  fa-search"> </i> <input class="buscar" type="search" name="buscar" placeholder=" Buscar" >
                     <i class="fa fa-bell"> </i>
-                    <i class="fa fa-user"> </i>
-                    <i class="fa fa-sort-down"></i>
+                    <div class="dropdown">
+                        <i class="fa fa-user"> </i>   
+                        <i class="fa fa-sort-down"></i>
+                        <div class='dropdown-content'>
+                            <a href="#">Administrar perfiles</a>
+                            <a href="#">Cuenta</a>
+                            <a href="#">Cerrar sesion</a>
+                        </div>
+                    </div>
                 </div>
             </div>
        </header>
@@ -67,48 +74,533 @@
                 <div class='carousel'>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/ejercitodelosmuertos.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Ejercito de los muertos</h4>
+                            <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/cerebro.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Cerebro</h4>
+                            <h5>1h 40min, Acción Drama, 2019 <br> <span> 30,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/gozilaykong.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Gozillay and Kong</h4>
+                            <h5>1h 40min, Acción Drama, 2020 <br> <span> 53,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/rickMorty02.jpg" alt=""> </a>
+                        <div class='card'>
+                            <h4>Rick and Morty</h4>
+                            <h5>1h 40min, Acción Drama, 2018 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/rapidos y furiosos.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Rapidos y furiosos</h4>
+                            <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/player-one-slider.jpg" alt=""> </a>
+                        <div class='card'>
+                            <h4>Ready player one</h4>
+                            <h5>1h 40min, Acción Drama, 2018 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/nino.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>nino en panales</h4>
+                            <h5>1h 40min, Acción Drama, 2017 <br> <span> 22,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/loki.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Loki</h4>
+                            <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/lupin.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Lupin</h4>
+                            <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/jungla.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Jungla</h4>
+                            <h5>1h 40min, Acción Drama, 2021 <br> <span> 46,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/ejercitodelosmuertos.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Ejercito de los muertos</h4>
+                            <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/cerebro.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Cerebro</h4>
+                            <h5>1h 40min, Acción Drama, 2019 <br> <span> 30,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                     <div class='pelicula'>
                         <a href="#"> <img src="img/gozilaykong.png" alt=""> </a>
+                        <div class='card'>
+                            <h4>Gozillay and Kong</h4>
+                            <h5>1h 40min, Acción Drama, 2020 <br> <span> 53,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <button role='button' id='flecha-derecha' class='flecha-derecha'> <i class="fa fa-angle-right"></i> </button>
         </div>
     </div>
+    <!-- ************ series **************** -->
+        <div class="peliculas-recomendadas contenedor">
+            <div class='contenedor-titulo-controles'>
+                <h3>Series</h3>
+                <div class='indicadores'>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            <!--contenedor para el carusel-->
+            <div class='contenedor-principal'>
+                <button role='button' id='flecha-izquierda' class='flecha-izquierda'> <i class="fa fa-angle-left"></i> </button>
+                <!--Crusel.-->
+                <div class='contenedor-carousel'>
+                    <div class='carousel'>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/ejercitodelosmuertos.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Ejercito de los muertos</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/cerebro.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Cerebro</h4>
+                                <h5>1h 40min, Acción Drama, 2019 <br> <span> 30,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/gozilaykong.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Gozillay and Kong</h4>
+                                <h5>1h 40min, Acción Drama, 2020 <br> <span> 53,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/rickMorty02.jpg" alt=""> </a>
+                            <div class='card'>
+                                <h4>Rick and Morty</h4>
+                                <h5>1h 40min, Acción Drama, 2018 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/rapidos y furiosos.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Rapidos y furiosos</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/player-one-slider.jpg" alt=""> </a>
+                            <div class='card'>
+                                <h4>Ready player one</h4>
+                                <h5>1h 40min, Acción Drama, 2018 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/nino.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>nino en panales</h4>
+                                <h5>1h 40min, Acción Drama, 2017 <br> <span> 22,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/loki.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Loki</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/lupin.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Lupin</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/jungla.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Jungla</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 46,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/ejercitodelosmuertos.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Ejercito de los muertos</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/cerebro.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Cerebro</h4>
+                                <h5>1h 40min, Acción Drama, 2019 <br> <span> 30,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/gozilaykong.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Gozillay and Kong</h4>
+                                <h5>1h 40min, Acción Drama, 2020 <br> <span> 53,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button role='button' id='flecha-derecha' class='flecha-derecha'> <i class="fa fa-angle-right"></i> </button>
+            </div>
+        </div>
+    <!-- ************ Populares de netflix ************** -->
+        <div class="peliculas-recomendadas contenedor">
+            <div class='contenedor-titulo-controles'>
+                <h3>Populares de netflix</h3>
+                <div class='indicadores'>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            <!--contenedor para el carusel-->
+            <div class='contenedor-principal'>
+                <button role='button' id='flecha-izquierda' class='flecha-izquierda'> <i class="fa fa-angle-left"></i> </button>
+                <!--Crusel.-->
+                <div class='contenedor-carousel'>
+                    <div class='carousel'>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/ejercitodelosmuertos.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Ejercito de los muertos</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/rapidos y furiosos.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Rapidos y furiosos</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/nino.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>nino en panales</h4>
+                                <h5>1h 40min, Acción Drama, 2017 <br> <span> 22,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/loki.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Loki</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/lupin.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Lupin</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/jungla.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Jungla</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 46,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/ejercitodelosmuertos.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Ejercito de los muertos</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button role='button' id='flecha-derecha' class='flecha-derecha'> <i class="fa fa-angle-right"></i> </button>
+            </div>
+        </div>
+        <!-- ********************Mi lista*********************** -->
+        <div class="peliculas-recomendadas contenedor">
+            <div class='contenedor-titulo-controles'>
+                <h3>Mi lista</h3>
+                <div class='indicadores'>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            <!--contenedor para el carusel-->
+            <div class='contenedor-principal'>
+                <button role='button' id='flecha-izquierda' class='flecha-izquierda'> <i class="fa fa-angle-left"></i> </button>
+                <!--Crusel.-->
+                <div class='contenedor-carousel'>
+                    <div class='carousel'>
+                        <div class='serie'>
+                            <a href="#"> <img src="img/player-one-slider.jpg" alt=""> </a>
+                            <div class='card'>
+                                <h4>Ready player one</h4>
+                                <h5>1h 40min, Acción Drama, 2018 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/nino.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>nino en panales</h4>
+                                <h5>1h 40min, Acción Drama, 2017 <br> <span> 22,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/loki.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Loki</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/lupin.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Lupin</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                        <div class=' serie'>
+                            <a href="#"> <img src="img/jungla.png" alt=""> </a>
+                            <div class='card'>
+                                <h4>Jungla</h4>
+                                <h5>1h 40min, Acción Drama, 2021 <br> <span> 46,2% para ti </span> </h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                                <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                                <button><i class="fa fa-plus"> </i> mas informacion</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button role='button' id='flecha-derecha' class='flecha-derecha'> <i class="fa fa-angle-right"></i> </button>
+            </div>
+        </div>
+    <!------------- Footer pie de pagina -------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class='footer-col'>
+                   <ul>
+                       <li> <a href="#">Audio y subtitulo</a> </li>
+                       <li> <a href="#">Prensa</a> </li>
+                       <li> <a href="#">Privacidad</a> </li>
+                       <li> <a href="#">Contacto</a> </li>
+                   </ul>
+                </div>
+                <div class='footer-col'>
+                    <ul>
+                        <li> <a href="#">Audio descriptivo</a> </li>
+                        <li> <a href="#">Relaciones con inversionistas</a> </li>
+                        <li> <a href="#">Avisos legales</a> </li>
+                        <li> <a href="#">Informacion corporativa</a> </li>
+                    </ul>
+                 </div>
+                 <div class='footer-col'>
+                    <ul>
+                        <li> <a href="#">Centro de ayuda</a> </li>
+                        <li> <a href="#">Terminos de uso</a> </li>
+                        <li> <a href="#">Preferencias de cookies</a> </li>
+                        <li> <a href="#">Tarjeta de credito</a> </li>
+                    </ul>
+                 </div>
+                 <div class='footer-col'>
+                    <h4>Redes Sociales</h4> 
+                        <div class='social-links'>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+
+                        <button><a href="#">Código de servicio</a></button>
+                 </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -34,7 +34,8 @@ header{
 }
 header .contenedor{
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    justify-content: space-around;
     align-items: center;
 }
 header .logotipo{
@@ -56,8 +57,35 @@ header nav a:hover{
 }
 .contenedor .perfil i{
     color: #ffffff;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #141414be;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f18a}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 .perfil .buscar{
     padding: 4px 25px;
     border: 1px solid #fff;
@@ -150,9 +178,9 @@ header nav a:hover{
 .contenedor-titulo-controles .indicadores button.activo{
     background: red;
 }
+
 /***********  CONTENEDOR PIRNCIPAL Y FLECHAS ******************/
 .peliculas-recomendadas{
-    border: 1px solid yellow;
     margin-bottom: 70px;
 }
 .peliculas-recomendadas .contenedor-principal{
@@ -189,7 +217,7 @@ header nav a:hover{
 .peliculas-recomendadas .contenedor-carousel{
     width: 100%;
     padding: 20px 0; 
-    overflow: hidden;/*lo que se salga del 1005 que este oculto*/
+    overflow: hidden;/*lo que se salga del 100% que este oculto*/
     scroll-behavior: smooth; /*el scrol se suabe*/
 }
 .peliculas-recomendadas .contenedor-carousel .carousel{
@@ -201,15 +229,221 @@ header nav a:hover{
     transition:.3s ease all; 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
 }
+.peliculas-recomendadas .contenedor-carousel .carousel .serie{
+    min-width: 20%;
+    transition:.3s ease all; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+/********** EFECTO HOVER PARA QUE LAS PELI CRESCA  *******************/
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover{
-    transform: scale(1.2);
-    transform-origin: center; /*Para que la img cresca de desntro hasia fuera*/
+    transform: scale(1.1);
+    transform-origin: center; /*Para que la img cresca de dentro hasia fuera*/
+}
+.peliculas-recomendadas .contenedor-carousel .carousel .serie:hover{
+    transform: scale(1.1);
+    transform-origin: center; /*Para que la img cresca de dentro hasia fuera*/
 }
 /*para que las peliculas en el carusel se acomoden*/
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img{
     width: 100%;
     vertical-align: top;
+    border-radius: 15px;
 }
+.peliculas-recomendadas .contenedor-carousel .carousel .serie img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 15px;
+}
+.contenedor-carousel .carousel .pelicula .card{
+    position: absolute;
+    width: 15.3em;
+    top: 0;
+    visibility: hidden;
+    background-color: #141414c5;
+    border-radius: 15px;
+    /*width: auto;*/
+    height: 100%;
+}
+.contenedor-carousel .carousel .serie .card{
+    position: absolute;
+    width: 15.3em;
+    top: 0;
+    visibility: hidden;
+    background-color: #141414c5;
+    border-radius: 15px;
+    /*width: auto;*/
+    height: 100%;
+}
+.contenedor-carousel .carousel .pelicula.hover .card{
+    visibility: visible;
+    display: block;
+    color: #fff;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.contenedor-carousel .carousel .serie:hover .card{
+    visibility: visible;
+    display: block;
+    color: #fff;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.contenedor-carousel .carousel .pelicula.hover .card h4{
+    font-size: 18px;
+    padding: 5px;
+}
+.contenedor-carousel .carousel .pelicula.hover .card h5{
+    font-size: 12px;
+    padding: 5px;
+}
+.contenedor-carousel .carousel .serie:hover .card h5{
+    font-size: 12px;
+    padding: 5px;
+}
+.contenedor-carousel .carousel .pelicula.hover .card h5 span{
+    color: #1ce43d;
+    font-size: 15px;
+}
+.contenedor-carousel .carousel .serie:hover .card h5 span{
+    color: #1ce43d;
+    font-size: 15px;
+}
+.contenedor-carousel .carousel .pelicula.hover .card p{
+    font-size: 13px;
+    text-align: justify;
+    padding: 5px 15px;
+}
+.contenedor-carousel .carousel .serie:hover .card p{
+    font-size: 13px;
+    text-align: justify;
+    padding: 5px 15px;
+}
+.contenedor-carousel .carousel .pelicula.hover .card button{
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3px;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+.contenedor-carousel .carousel .serie:hover .card button{
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3px;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+.contenedor-carousel .carousel .pelicula.hover .card button:hover{
+    background-color: #a8a7a7da;
+}
+.contenedor-carousel .carousel .serie:hover .card button:hover{
+    background-color: #a8a7a7da;
+}
+.contenedor-carousel .carousel .pelicula.hover .card button i{
+    font-size: 15px;
+    color: var(--rojo);
+}
+.contenedor-carousel .carousel .serie:hover .card button i{
+    font-size: 15px;
+    color: var(--rojo);
+}
+/***************** Footter  ***************************************/
+.footer{
+    width: 100%;
+    background-color:#080808be;
+}
+.container{
+    max-width: 90%;
+    margin: auto;
+}
+.row{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row .footer-col ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 16px;
+    color: #fff;
+    padding-top: 10px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+}
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--rojo);
+    height: 2px;
+    box-sizing: border-box;
+    width: 100px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    display: block;
+    transition: all 0.5s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffffb6;
+    padding-left: 10px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #18181896;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+.footer-col button{
+    margin-top: 10px;
+    padding: 6px 20px;
+    background-color: #14141493;
+    border: none;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+.footer-col button a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-col button:hover{
+    border: 1px solid #000;
+    background-color: #fff;
+}
+.footer-col button:hover a{
+    color: #000;
+}
+
 /************* MEDIA QUERES DEL MENU  *************************************/
 @media screen and (max-width: 800px) {
     header .logotipo{
@@ -253,5 +487,48 @@ header nav a:hover{
     .peliculas-recomendadas .flecha-izquierda,
     .peliculas-recomendadas .flecha-derecha{
         display: none; /*ocultamos indicadores y flechas*/
+    }
+    /**********  EFECTO HOVER de imagenes de carousel *******************/
+    .contenedor-carousel .carousel .pelicula .card{
+        width: 14.3em;
+    }
+    .contenedor-carousel .carousel .serie .card{
+        width: 14.3em;
+    }
+    .contenedor-carousel .carousel .pelicula.hover .card h4{
+        font-size: 16px;
+    }
+    .contenedor-carousel .carousel .serie:hover .card h4{
+        font-size: 16px;
+    }
+    .contenedor-carousel .carousel .pelicula.hover .card h5{
+        font-size: 11px;
+    }
+    .contenedor-carousel .carousel .serie:hover .card h5{
+        font-size: 11px;
+    }
+    .contenedor-carousel .carousel .pelicula.hover .card h5 span{
+        font-size: 12px;
+    }
+    .contenedor-carousel .carousel .serie:hover .card h5 span{
+        font-size: 12px;
+    }
+    .contenedor-carousel .carousel .pelicula.hover .card p{
+        font-size: 12px;
+        text-align: justify;
+        padding: 5px;
+        padding-right: 10px;
+    }
+    .contenedor-carousel .carousel .serie:hover .card p{
+        font-size: 12px;
+        text-align: justify;
+        padding: 5px;
+        padding-right: 10px;
+    }
+    .contenedor-carousel .carousel .pelicula.hover .card button{
+        padding: 4px 15px;
+    }
+    .contenedor-carousel .carousel .serie:hover .card button{
+        padding: 4px 15px;
     }
 }

@@ -1,6 +1,5 @@
 const fila = document.querySelector('.contenedor-carousel');
 const peliculas = document.querySelectorAll('.pelicula');
-
 const flechaizquierda = document.getElementById('flecha-izquierda');
 const flechaderecha = document.getElementById('flecha-derecha');
 
@@ -8,7 +7,6 @@ const flechaderecha = document.getElementById('flecha-derecha');
 /*Cuando demos click en la flecha derecha  obtengas el escrol de la fila y le sumes el offsetWidth*/
 flechaderecha.addEventListener('click', ()=>{
     fila.scrollLeft += fila.offsetWidth;
-
     //Accedemos al indicador activo
     const indicadorActivo = document.querySelector('.indicadores .activo');
     //preguntamos si tiene algun elemento a la izquierda
@@ -19,7 +17,6 @@ flechaderecha.addEventListener('click', ()=>{
 });
 flechaizquierda.addEventListener('click', ()=>{
     fila.scrollLeft -= fila.offsetWidth;
-
         //Accedemos al indicador activo
         const indicadorActivo = document.querySelector('.indicadores .activo');
         //preguntamos si tiene algun elemento a la derecha
@@ -27,9 +24,7 @@ flechaizquierda.addEventListener('click', ()=>{
             indicadorActivo.previousSibling.classList.add('activo');
             indicadorActivo.classList.remove('activo');
         }
-
 });
-
 /****************** PAGINACION - INDICADORES    ***************************/
 /*OJO  utilizamos la libreria Math.cell pra redondial el 
 numero de longitud y de esta forma poder obtener cuantos indicadores necesitamos para el scroll.*/
@@ -61,5 +56,4 @@ peliculas.forEach((pelicula) => { //por cada pelicula
 
 fila.addEventListener('mouseleave', ()=>{
     peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
-
 });
