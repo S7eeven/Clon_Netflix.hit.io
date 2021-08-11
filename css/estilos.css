@@ -4,10 +4,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*
-font-family: 'Bebas Neue', cursive;
-font-family: 'Ubuntu', sans-serif;
-*/
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("../fuentes/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Light";
+    src: url("../fuentes/Ubuntu-Light.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("../fuentes/Ubuntu-Regular.ttf");
+}
 :root{
     --rojo: red;
     --fondo: #141414;
@@ -22,6 +30,8 @@ font-family: 'Ubuntu', sans-serif;
 }
 body{
     background-color: var(--fondo);
+    width: 100%; 
+    overflow-x: hidden;
 }
 
 .contenedor{
@@ -42,7 +52,8 @@ header .logotipo{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: var(--rojo);
-    font-size:40px
+    font-size:40px;
+    font-family: "BebasNeue-Regular", "cursive";
 }
 header nav{
     word-spacing: 10px;
@@ -51,6 +62,9 @@ header nav a{
     color: #ffffff;
     text-decoration: none;
     margin-right: 3px;
+    font-family: "Ubuntu-Light";
+    
+
 }
 header nav a:hover{
     color: var(--rojo);
@@ -99,6 +113,7 @@ header nav a:hover{
     margin-left: 60px;
     padding: 8px;
     margin-top: 70px;
+    font-family: "Ubuntu-Regular";
 }
 .main .contenedor-header .letra_n{
     color: red;
@@ -111,6 +126,7 @@ header nav a:hover{
 .contenedor-header .titulo{
     color: #fff;
     font-size: 55px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-header .datos_peli li{
     text-decoration: none;
@@ -136,6 +152,7 @@ header nav a:hover{
 .datos_peli .boton{
     margin: 8px;
     padding: 5px 35px;
+    font-family: "Ubuntu-Regular";
 }
 .datos_peli .boton i {
     color: var(--rojo);
@@ -165,6 +182,7 @@ header nav a:hover{
     font-size: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-titulo-controles .indicadores button{
     background: #fff;
@@ -291,32 +309,46 @@ header nav a:hover{
 .contenedor-carousel .carousel .pelicula.hover .card h4{
     font-size: 18px;
     padding: 5px;
+    font-family: "BebasNeue-Regular";
+}
+.contenedor-carousel .carousel .serie:hover .card h4{
+    font-size: 18px;
+    padding: 5px;
+    font-family: "BebasNeue-Regular";
 }
 .contenedor-carousel .carousel .pelicula.hover .card h5{
     font-size: 12px;
     padding: 5px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-carousel .carousel .serie:hover .card h5{
     font-size: 12px;
     padding: 5px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-carousel .carousel .pelicula.hover .card h5 span{
     color: #1ce43d;
     font-size: 15px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-carousel .carousel .serie:hover .card h5 span{
     color: #1ce43d;
     font-size: 15px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-carousel .carousel .pelicula.hover .card p{
-    font-size: 13px;
+    font-size: 12px;
     text-align: justify;
-    padding: 5px 15px;
+    padding: 3px;
+    margin-right: 15px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-carousel .carousel .serie:hover .card p{
-    font-size: 13px;
+    font-size: 12px;
     text-align: justify;
-    padding: 5px 15px;
+    padding: 3px;
+    margin-right: 15px;
+    font-family: "Ubuntu-Regular";
 }
 .contenedor-carousel .carousel .pelicula.hover .card button{
     border: none;
@@ -326,6 +358,9 @@ header nav a:hover{
     margin-bottom: 3px;
     padding: 6px 20px;
     cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #14141494;
+    color: #fff;
 }
 .contenedor-carousel .carousel .serie:hover .card button{
     border: none;
@@ -335,12 +370,17 @@ header nav a:hover{
     margin-bottom: 3px;
     padding: 6px 20px;
     cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #14141494;
+    color: #fff;
 }
 .contenedor-carousel .carousel .pelicula.hover .card button:hover{
-    background-color: #a8a7a7da;
+    background-color: #fff;
+    color: #000;
 }
 .contenedor-carousel .carousel .serie:hover .card button:hover{
-    background-color: #a8a7a7da;
+    background-color: #fff;
+    color: #000;
 }
 .contenedor-carousel .carousel .pelicula.hover .card button i{
     font-size: 15px;
@@ -354,6 +394,7 @@ header nav a:hover{
 .footer{
     width: 100%;
     background-color:#080808be;
+    font-family: "Ubuntu-Regular";
 }
 .container{
     max-width: 90%;

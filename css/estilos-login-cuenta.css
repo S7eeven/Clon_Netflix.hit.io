@@ -1,0 +1,215 @@
+/*****************************************************************************/
+/******************** ESTILOS DE LOGIN ********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url("../fuentes/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Light";
+    src: url("../fuentes/Ubuntu-Light.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("../fuentes/Ubuntu-Regular.ttf");
+}
+:root{
+    --rojo: red;
+    --fondo: #141414;
+}
+body{
+    background-image: url(../img/login.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 643px;
+    width: 100%; 
+    overflow-x: hidden;
+}
+.main{
+    background-color: #1414144f;
+    height: 643px;
+    width: 100%; 
+}
+.netflix .logotipo{
+    color: var(--rojo);
+    font-weight: bold;
+    font-size: 50px;
+    padding: 10px 30px;
+    font-family: "BebasNeue-Regular";
+}
+.main .texto{
+    width: 75%;
+    margin: auto;
+    padding: 4px;
+    text-align: center;
+    color: #fff;
+}
+.main .texto h4{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "BebasNeue-Regular";
+}
+.main .texto p{
+    font-size: 25px;
+    font-family: "Ubuntu-Regular";
+}
+
+/****************  LOGIN   **************************/
+.form-box{
+    width: 370px;
+    height: 455px;
+    position: relative;
+    margin: 2px auto;
+    background: #141414be;
+    border-radius: 10px;
+    padding: 5px;
+    /***** OCULTAR ELEMENTO en este caso registro *****/
+    overflow: hidden;
+}
+.button-box{
+    width: 240px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 px 9px #dcdcddd5;
+    background-color: #dcdcdd46;
+}
+.toggle-btn{
+    padding: 10px 22px;
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+    outline: none;
+    position: relative;
+    color: #fff;
+    font-family: "Ubuntu-Regular";
+}
+#elegir{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    background: #c01717e3;
+    transition: 0.8s;
+}
+.input-group{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: 0.8s;
+    margin: 0 40px;
+}
+.input-field{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #4b49499f;
+    border: none;
+    border: 1px solid #424242e0;
+    color: #fff;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #c01717c2;
+    border: 0px;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+}
+.submit-btn:hover{
+    background: #ad0f0ff1;
+}
+.check-box{
+    margin: 10px 10px 25px 0;
+}
+span{
+    color: #fff;
+    font-size: 13px;
+    bottom: 64px;
+    position: absolute;
+}
+/*************** REGISTRO DE NUEVO   **************/
+#login{
+    left: 20px;
+}
+#registro{
+    left: 450px;
+}
+  
+/***************************************************************/
+/************  ESTILOS ADMINISTRAR PERFILES   *****************/
+.container-fondo{
+    background-color: #202020;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 643px;
+    width: 100%; 
+    overflow-x: hidden;  
+}
+.centrado-logo{
+    width: 20%;
+    margin: 50px auto;
+    padding: 3px;
+    text-align: center;
+}
+.container-fondo .tu-perfil{
+    width: 50%;
+    margin: -40px auto;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+}
+.container-fondo .tu-perfil p{
+    font-family: "Ubuntu-Regular";
+}
+.container-fondo .user-perfil{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: auto;
+    margin-top: 80px;
+}
+.container-fondo .user-perfil .icon-perfil{
+    padding: 8px 10px;
+    margin: auto;
+}
+.container-fondo .user-perfil .icon-perfil img:hover{
+    background-color: #fcfcfcbe;
+    padding: 5px;
+    border-radius: 50%;
+}
+.container-fondo .user-perfil .icon-perfil p{
+    text-align: center;
+    color: #fff;
+    font-family: "Ubuntu-Regular";
+}
+.container-fondo .btn_admin{ 
+    margin-top: 40px;
+    text-align: center;
+}
+.container-fondo .btn_admin input[type='button']{
+    padding: 8px 25px;
+    background-color: #181818be;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    font-family: "Ubuntu-Regular";
+}
+.container-fondo .btn_admin input[type='button']:hover{
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}

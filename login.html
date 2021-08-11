@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Login</title>
+    <link rel="icon" type="images/png" href="img/logo-n.png">
+    <link rel="stylesheet" href="css/estilos-login-cuenta.css">
+</head>
+<body>
+    <section class='main'>
+        <div class='netflix'>
+            <h2 class='logotipo'>NETFLIX</h2>
+        </div>
+        <div class='texto'>
+            <h4>Películas y series ilimitadas y mucho más.</h4>
+            <p>¿ Quieres ver netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu menbresía de netflix</p>
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="login()"  >Iniciar Sesion</button>
+                <button type="button" class="toggle-btn" onclick="registro()"  >Registrar</button>
+            </div>
+            <!-- Inisiar sesion -->
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Email o número de teléfono" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"> <span>Has olvidado tu contrasena.</span>
+                <button type="submit" class="submit-btn">Iniciar sesión</button>
+            </form>
+                 <!-- Registro -->
+            <form id="registro" class="input-group">
+                <input type="text" class="input-field" placeholder="Usuario" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box" required> <span>Acepta los terminos para acceder.</span>
+                <button type="submit" class="submit-btn">Registrar</button>
+            </form>
+        </div>
+
+
+
+    </section>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

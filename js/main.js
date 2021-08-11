@@ -3,6 +3,10 @@ const peliculas = document.querySelectorAll('.pelicula');
 const flechaizquierda = document.getElementById('flecha-izquierda');
 const flechaderecha = document.getElementById('flecha-derecha');
 
+var inicio = document.getElementById("login");
+var misdatos = document.getElementById("registro");
+var elegir = document.getElementById("elegir");
+
 /**************  Evento listener para la flecha derecha y izquierda  **************************/
 /*Cuando demos click en la flecha derecha  obtengas el escrol de la fila y le sumes el offsetWidth*/
 flechaderecha.addEventListener('click', ()=>{
@@ -57,3 +61,15 @@ peliculas.forEach((pelicula) => { //por cada pelicula
 fila.addEventListener('mouseleave', ()=>{
     peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });
+
+/* login*/
+function login(){
+    inicio.style.left = "10px";
+    misdatos.style.left = "450px";
+    elegir.style.left = "0px";
+}
+function registro(){
+    inicio.style.left = "-400px";
+    misdatos.style.left = "10px";
+    elegir.style.left = "120px";
+}
