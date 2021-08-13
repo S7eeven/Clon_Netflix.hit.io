@@ -51,7 +51,7 @@
                     dar con ellas, sin éxito. Wade logra resolver el primer rompecabezas del premio, y, a partir de ese momento,
                     debe competir contra miles de jugadores para conseguir el trofeo.
                 </p>
-                <button type="submit" class='boton'><i class="fa fa-play"></i> Reproducir</button>
+                <button type="submit" class='boton' id="open" ><i class="fa fa-play"></i> Reproducir</button>
                 <button type="submit" class='boton btn_masInfo'><i class="fa fa-plus-square"></i> Mas Informacion</button>
             </div>
        </div>
@@ -100,10 +100,54 @@
                             <h5>1h 40min, Acción Drama, 2020 <br> <span> 53,2% para ti </span> </h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
-                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button ><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
                             <button><i class="fa fa-plus"> </i> mas informacion</button>
                         </div>
                     </div>
+                    <div class='pelicula'>
+                        <a href="#"> <img src="img/player-one-slider.jpg" alt=""> </a>
+                        <div class='card'>
+                            <h4>Ready player one</h4>
+                            <h5>1h 40min, Acción Drama, 2018 <br> <span> 60,2% para ti </span> </h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
+                            <button id="open" ><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
+                            <button><i class="fa fa-plus"> </i> mas informacion</button>
+                        </div>
+                    </div>
+
+                    <!-- VENTANA MODAL -->
+                    <div id="modal_container" class="modal-container">
+                        <div class="modal">
+                            <video width="500px"  height="400" controls>
+                                <source src="img/Ready player one.mp4" type="video/mp4">
+                                <source src="img/Ready player one.mp4" type="video/ogg">
+                            </video>
+                            <button id="close">X</button>
+                            <div class='info-datos-peli'>
+                                
+                                <div class='datos-info'>
+                                    <h3>Ready player one</h3>
+                                    <ul>
+                                        <li class='color-verde'>60,2%para ti</li>
+                                        <li class='cuadro'>12+</li>
+                                        <li>2018</li>
+                                        <li>1h 53min</li>
+                                        <li class='cuadro'>HD</li>
+                                    </ul>
+                                    <p>Wade Watts, un jugador del año 2045 que, como el resto de la humanidad,
+                                    prefiere el videojuego de OASIS al cada vez más sombrío mundo real. En este 
+                                    lugar se esconden las piezas de un rompecabezas cuya resolución conduce a 
+                                    una fortuna de medio billón de dólares y el control total de todo el videojuego.
+                                    Las claves del enigma están basadas en la cultura popular de los 80 y, durante
+                                    años, millones de humanos han intentado dar con ellas, sin éxito. Wade logra 
+                                    resolver el primer rompecabezas del premio, y, a partir de ese momento, debe 
+                                    competir contra miles de jugadores para conseguir el trofeo. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class='pelicula'>
                         <a href="#"> <img src="img/rickMorty02.jpg" alt=""> </a>
                         <div class='card'>
@@ -120,17 +164,6 @@
                         <div class='card'>
                             <h4>Rapidos y furiosos</h4>
                             <h5>1h 40min, Acción Drama, 2021 <br> <span> 60,2% para ti </span> </h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
-                            <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>
-                            <button><i class="fa fa-plus"> </i> mas informacion</button>
-                        </div>
-                    </div>
-                    <div class='pelicula'>
-                        <a href="#"> <img src="img/player-one-slider.jpg" alt=""> </a>
-                        <div class='card'>
-                            <h4>Ready player one</h4>
-                            <h5>1h 40min, Acción Drama, 2018 <br> <span> 60,2% para ti </span> </h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Maxime ab voluptas ratione velit m ipsum dolor sit amet m ipsum dolor sit amet......</p> <br>
                             <button><i class="fa fa-caret-right"> </i> Reproducir </button> <br>

@@ -7,6 +7,11 @@ var inicio = document.getElementById("login");
 var misdatos = document.getElementById("registro");
 var elegir = document.getElementById("elegir");
 
+//TODO: VENTANA MODAL 
+const open = document.getElementById('open');
+const modal_container = document.getElementById('modal_container');
+const close = document.getElementById('close');
+
 /**************  Evento listener para la flecha derecha y izquierda  **************************/
 /*Cuando demos click en la flecha derecha  obtengas el escrol de la fila y le sumes el offsetWidth*/
 flechaderecha.addEventListener('click', ()=>{
@@ -73,3 +78,12 @@ function registro(){
     misdatos.style.left = "10px";
     elegir.style.left = "120px";
 }
+
+//TODO: VENTANA MODAL 
+open.addEventListener('click', () => {
+  modal_container.classList.add('show');  
+});
+
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show');
+});
